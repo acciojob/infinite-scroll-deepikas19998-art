@@ -1,4 +1,3 @@
-/* Reset default margins */
 body {
   margin: 0;
   padding: 0;
@@ -6,25 +5,22 @@ body {
   background-color: #f9f9f9;
 }
 
-/* Page title */
 h1 {
   text-align: center;
-  padding: 20px 0;
+  padding: 20px;
   background-color: #007bff;
   color: white;
   margin: 0;
 }
 
-/* List container */
-ul#list {
+ul#infi-list {
   list-style-type: none;
   padding: 20px;
   max-width: 600px;
   margin: 0 auto;
 }
 
-/* Individual list items */
-ul#list li {
+ul#infi-list li {
   background-color: #ffffff;
   padding: 15px 20px;
   margin-bottom: 15px;
@@ -34,7 +30,6 @@ ul#list li {
   transition: background-color 0.3s;
 }
 
-/* Hover effect */
-ul#list li:hover {
+ul#infi-list li:hover {
   background-color: #e6f0ff;
 }
