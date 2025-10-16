@@ -3,6 +3,10 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   background-color: #f9f9f9;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1 {
@@ -10,16 +14,25 @@ h1 {
   padding: 20px;
   background-color: #007bff;
   color: white;
+  width: 100%;
   margin: 0;
 }
 
+/* Scrollable container */
 ul#infi-list {
   list-style-type: none;
   padding: 20px;
+  margin: 0;
+  width: 100%;
   max-width: 600px;
-  margin: 0 auto;
+
+  height: 400px; /* Make it scrollable */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  background: #fff;
 }
 
+/* List item style */
 ul#infi-list li {
   background-color: #ffffff;
   padding: 15px 20px;

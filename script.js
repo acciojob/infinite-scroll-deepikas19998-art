@@ -1,7 +1,7 @@
 const listContainer = document.getElementById('infi-list');
 let itemCount = 0;
 
-// Function to create and append n list items
+// Add n list items
 function addItems(n) {
   for (let i = 0; i < n; i++) {
     itemCount++;
@@ -11,13 +11,12 @@ function addItems(n) {
   }
 }
 
-// Initial load with 10 items
+// Add 10 items on load
 addItems(10);
 
-// Infinite scroll logic
-window.addEventListener('scroll', () => {
-  // If user scrolls near the bottom, add 2 new items
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
+// Add more when scrolled near bottom
+listContainer.addEventListener('scroll', () => {
+  if (listContainer.scrollTop + listContainer.clientHeight >= listContainer.scrollHeight - 20) {
     addItems(2);
   }
 });
